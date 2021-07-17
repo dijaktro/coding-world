@@ -18,7 +18,6 @@
             body::before {
                 content: "";
                 background: url('https://source.unsplash.com/user/erondu/1600x900');
-                background-repeat: no-repeat;
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -49,7 +48,7 @@
 
             section {
                 height: 300px;
-                margin: 0px 25px;
+                margin: 0px 0px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -59,6 +58,33 @@
 
             h1 {
                 font-size: 3rem;
+            }
+
+            .container {
+                display: flex;
+                margin: 30px;
+                padding: 10px;
+                flex-direction: row;
+                height: 40vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box{
+                background-color: rgb(106, 106, 207, 0.3);
+                border-radius: 5px;
+                box-shadow: 7px 10px brown;
+                position: relative;
+                align-self: center;
+                margin: 0px 20px;
+                padding: 8px;
+                width: 25vw;
+                height: 25vh;
+            }
+
+            div p {
+                font-family: 'Source Code Pro', monospace;
+                color: rgb(247, 240, 240);
             }
         </style>
         </head>
@@ -80,6 +106,17 @@
                     </p>
             </section>
             <main>
+                <div class="container">
+                    <div class="box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt cupiditate similique tenetur totam? Dolor non fugit ratione illo officiis!</p>
+                    </div>
+                    <div class="box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, porro eligendi quidem accusamus voluptates magni quasi suscipit illum. A, porro!</p>
+                    </div>
+                    <div class="box">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt non in eos perferendis animi sed veritatis ullam quam repudiandae voluptatibus.</p>
+                    </div>
+                </div>
             </main>
         </body>
 </html>
